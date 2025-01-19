@@ -1,9 +1,13 @@
-import React from 'react';
-import { Link } from 'gatsby';
+import React from "react";
+import { Link } from "gatsby";
+import { Helmet } from "react-helmet";
 
 const IndexPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-100 flex items-center justify-center">
+      <Helmet>
+        <title>Home - Flexible Commands Editor</title>
+      </Helmet>
       <div className="max-w-md w-full bg-white shadow-md rounded-lg p-6">
         <h1 className="text-2xl font-bold text-center mb-6">
           Pebbles Flexible Commands Editor
